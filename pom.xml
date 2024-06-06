@@ -13,7 +13,7 @@
 	<name>blog-application-java</name>
 	<description>This is backend project for backend api&apos;s of Blogging Project</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>19</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -48,8 +48,10 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+			<version>1.18.32</version>
+			<scope>provided</scope>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
 		<dependency>
 			<groupId>org.modelmapper</groupId>
@@ -89,6 +91,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>blog-backend</finalName>
 	</build>
 
 </project>
